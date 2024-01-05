@@ -1,17 +1,13 @@
 function arrSet(input) {
   // Do something here
   let x = [];
+  let xIndex = 0;
   x.push(input[0])
-  for (let i = 0; i < input.length;i++) {
-    for(let j = 0; j < x.length;j++) {
-        if (x[j] !== input[i]) {
-            x.push(input[i])
-            j++
-            i++
-        } else {
-            i++
-        }
-    }
+  for (let i = 0; i < input.length; i++) {
+    if(input[i] !== x[xIndex]) {
+      x.push(input[i])
+      xIndex++
+    }    
   } return x
 }
 

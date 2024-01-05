@@ -4,9 +4,9 @@ function maxMin(arrIn) {
         return arrIn
     }
 
-    let max = arrIn[0]
-    let min = arrIn[1]
-    for(let i = 0;i < arrIn.length;i++) {
+    let max = 0
+    let min = 0
+    for(let i = 0; i < arrIn.length; i++) {
         if (arrIn[i] < min) {
             min = arrIn[i]
         }
