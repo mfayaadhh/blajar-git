@@ -6,7 +6,7 @@ function groupByAge(arr) {
     // Your code here
     let res = {};
     for(let i = 0; i < arr.length; i++) {
-        let age = (2024 - arr[i]);
+        let age = (2020 - arr[i]);
         if(res[age] === undefined) {
             res[age] = 1;
         } else {
